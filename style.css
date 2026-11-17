@@ -237,15 +237,11 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .food-gallery > img:last-child { grid-column: 1 / -1; aspect-ratio: 1.8; }
 }
 
-.header-phone { grid-column: 1 / -1; justify-self: end; display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); font-weight: 700; font-size: .9rem; text-underline-offset: 4px; }
-.header-phone:hover { color: var(--accent); }
 @media (min-width: 1000px) {
-  .header { grid-template-columns: 1fr auto 1fr auto; }
-  .header-phone { grid-column: 3; grid-row: 1; white-space: nowrap; }
-  .header > .button { grid-column: 4; grid-row: 1; }
+  .header { grid-template-columns: 1fr auto 1fr; }
+  .header > .button { grid-column: 3; grid-row: 1; }
 }
 @media (max-width: 760px) {
-  .header-phone { justify-self: center; }
-  .mobile-actions { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mobile-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .mobile-actions a { font-size: clamp(.8rem, 3.6vw, .95rem); }
 }
