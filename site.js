@@ -1,6 +1,31 @@
-// Gallery lightbox — click any gallery photo to open it full size.
+// Lukas' — mobile menu + gallery lightbox
 (function () {
   'use strict';
+
+  /* ---------- mobile menu ---------- */
+  var toggle = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      menu.hidden = !open;
+    }
+    toggle.addEventListener('click', function () {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+  }
+
+  /* ---------- gallery lightbox ---------- */
   var grid = document.querySelector('.gallery-grid');
   if (!grid) return;
   var shots = Array.prototype.slice.call(grid.querySelectorAll('img'));
