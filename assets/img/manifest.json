@@ -1344,5 +1344,317 @@
   ],
   "src_w": 1600,
   "src_h": 1200
+ },
+ "bar-evening": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/bar-evening.webp",
+    "w": 1100,
+    "h": 1100
+   }
+  ],
+  "src_w": 1100,
+  "src_h": 1100
+ },
+ "bar-gallery-360": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/bar-gallery-360.webp",
+    "w": 360,
+    "h": 302
+   }
+  ],
+  "src_w": 360,
+  "src_h": 302
+ },
+ "bar-gallery-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/bar-gallery-small.webp",
+    "w": 640,
+    "h": 537
+   }
+  ],
+  "src_w": 640,
+  "src_h": 537
+ },
+ "bar-gallery": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/bar-gallery.webp",
+    "w": 940,
+    "h": 788
+   }
+  ],
+  "src_w": 940,
+  "src_h": 788
+ },
+ "dining-hero-1448": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/dining-hero-1448.webp",
+    "w": 1448,
+    "h": 1086
+   }
+  ],
+  "src_w": 1448,
+  "src_h": 1086
+ },
+ "dining-hero-640": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/dining-hero-640.webp",
+    "w": 640,
+    "h": 480
+   }
+  ],
+  "src_w": 640,
+  "src_h": 480
+ },
+ "dining-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/dining-small.webp",
+    "w": 640,
+    "h": 480
+   }
+  ],
+  "src_w": 640,
+  "src_h": 480
+ },
+ "dining": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/dining.webp",
+    "w": 1280,
+    "h": 960
+   }
+  ],
+  "src_w": 1280,
+  "src_h": 960
+ },
+ "plated-entree-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/plated-entree-small.webp",
+    "w": 480,
+    "h": 402
+   }
+  ],
+  "src_w": 480,
+  "src_h": 402
+ },
+ "plated-entree": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/plated-entree.webp",
+    "w": 900,
+    "h": 754
+   }
+  ],
+  "src_w": 900,
+  "src_h": 754
+ },
+ "seafood-360": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seafood-360.webp",
+    "w": 360,
+    "h": 244
+   }
+  ],
+  "src_w": 360,
+  "src_h": 244
+ },
+ "seafood-risotto-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seafood-risotto-small.webp",
+    "w": 640,
+    "h": 427
+   }
+  ],
+  "src_w": 640,
+  "src_h": 427
+ },
+ "seafood-risotto": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seafood-risotto.webp",
+    "w": 1280,
+    "h": 853
+   }
+  ],
+  "src_w": 1280,
+  "src_h": 853
+ },
+ "seafood-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seafood-small.webp",
+    "w": 640,
+    "h": 434
+   }
+  ],
+  "src_w": 640,
+  "src_h": 434
+ },
+ "seafood": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seafood.webp",
+    "w": 940,
+    "h": 638
+   }
+  ],
+  "src_w": 940,
+  "src_h": 638
+ },
+ "seared-entree-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seared-entree-small.webp",
+    "w": 480,
+    "h": 480
+   }
+  ],
+  "src_w": 480,
+  "src_h": 480
+ },
+ "seared-entree": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/seared-entree.webp",
+    "w": 752,
+    "h": 752
+   }
+  ],
+  "src_w": 752,
+  "src_h": 752
+ },
+ "sliced-steak-360": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/sliced-steak-360.webp",
+    "w": 360,
+    "h": 305
+   }
+  ],
+  "src_w": 360,
+  "src_h": 305
+ },
+ "sliced-steak-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/sliced-steak-small.webp",
+    "w": 640,
+    "h": 541
+   }
+  ],
+  "src_w": 640,
+  "src_h": 541
+ },
+ "sliced-steak": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/sliced-steak.webp",
+    "w": 909,
+    "h": 769
+   }
+  ],
+  "src_w": 909,
+  "src_h": 769
+ },
+ "steak-and-seafood-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/steak-and-seafood-small.webp",
+    "w": 480,
+    "h": 307
+   }
+  ],
+  "src_w": 480,
+  "src_h": 307
+ },
+ "steak-and-seafood": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/steak-and-seafood.webp",
+    "w": 900,
+    "h": 575
+   }
+  ],
+  "src_w": 900,
+  "src_h": 575
+ },
+ "storefront-small": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/storefront-small.webp",
+    "w": 640,
+    "h": 320
+   }
+  ],
+  "src_w": 640,
+  "src_h": 320
+ },
+ "storefront": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/storefront.webp",
+    "w": 1440,
+    "h": 720
+   }
+  ],
+  "src_w": 1440,
+  "src_h": 720
+ },
+ "table-400": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/table-400.webp",
+    "w": 400,
+    "h": 400
+   }
+  ],
+  "src_w": 400,
+  "src_h": 400
+ },
+ "table-752": {
+  "group": "original",
+  "variants": [
+   {
+    "file": "img/table-752.webp",
+    "w": 752,
+    "h": 752
+   }
+  ],
+  "src_w": 752,
+  "src_h": 752
  }
 }
