@@ -93,6 +93,26 @@
     paraUpdate();
   }
 
+  /* ---------- directions: Apple Maps on iPhone/iPad, Google Maps elsewhere ----------
+     The button is a Google Maps universal link by default, which is what
+     Android wants and what a no-JS visitor gets. On an Apple device it is
+     rewritten to an Apple Maps URL so the phone opens the map app the
+     guest actually has. iPadOS 13+ reports itself as a Mac, so it only
+     gives itself away by touch. */
+  var dirLinks = document.querySelectorAll('a[data-directions]');
+  if (dirLinks.length) {
+    var appleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
+      (navigator.platform === 'MacIntel' && (navigator.maxTouchPoints || 0) > 1);
+    if (appleDevice) {
+      // encodeURIComponent leaves a raw apostrophe alone; escape it so the
+      // query string is clean for every parser and log pipeline.
+      var appleMapsUrl = 'https://maps.apple.com/?daddr=' +
+        encodeURIComponent('61C Mountain Blvd, Warren, NJ 07059') +
+        '&q=' + encodeURIComponent("Lukas' Seafood & Grille").replace(/'/g, '%27');
+      for (var d = 0; d < dirLinks.length; d++) dirLinks[d].href = appleMapsUrl;
+    }
+  }
+
   /* ---------- gallery lightbox ---------- */
   var grid = document.querySelector('.gallery-grid');
   if (!grid) return;
