@@ -76,9 +76,11 @@
   if (heroImg && window.matchMedia && window.matchMedia('(min-width: 761px)').matches) {
     var paraTicking = false;
     function paraUpdate() {
-      var limit = heroImg.parentNode.clientHeight * 0.07;
-      var y = Math.min((window.pageYOffset || 0) * 0.05, limit);
-      heroImg.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0) scale(1.02)';
+      // scale(1.08) leaves ~4% headroom on every side, so the photo can drift
+      // without ever exposing an edge. The cap keeps the drift inside that.
+      var limit = 18;
+      var y = Math.min((window.pageYOffset || 0) * 0.04, limit);
+      heroImg.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0) scale(1.08)';
       paraTicking = false;
     }
     window.addEventListener('scroll', function () {
