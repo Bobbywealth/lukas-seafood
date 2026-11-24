@@ -1,6 +1,20 @@
-// Lukas' — mobile menu + gallery lightbox
+// Lukas' — mobile menu, sticky offsets, today's hours, lightbox
 (function () {
   'use strict';
+
+  /* ---------- sticky header height ----------
+     The header's height depends on its own content (wordmark vs. button),
+     so anything that sticks underneath it has to read the real number
+     rather than assume one. Write it back as --header-h and let the CSS
+     use it for the jump bar and the anchor scroll padding. */
+  var headerEl = document.querySelector('.header');
+  function syncHeaderHeight() {
+    if (!headerEl) return;
+    document.documentElement.style.setProperty('--header-h', headerEl.offsetHeight + 'px');
+  }
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight);
+  window.addEventListener('load', syncHeaderHeight);
 
   /* ---------- mobile menu ---------- */
   var toggle = document.querySelector('.nav-toggle');
