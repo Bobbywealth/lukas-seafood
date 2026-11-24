@@ -5,6 +5,7 @@
   --text: #f5f3eb;
   --muted: #c6c9bf;
   --accent: #d8f0a3;
+  --warm: #f0a35c;
   --line: #41453f;
   font-family: Manrope, Arial, sans-serif;
 }
@@ -380,4 +381,54 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .hero-meta { margin-top: 18px; padding-top: 14px; font-size: .8rem; gap: 6px 20px; }
   .hero-picker { padding: 3px; }
   .hero-picker button { width: 40px; height: 40px; }
+}
+
+
+/* ---------- hero: warmth from the room ---------- */
+.hero-copy {
+  background:
+    radial-gradient(125% 155% at 100% 38%,
+      rgba(240,163,92,.17) 0%,
+      rgba(240,163,92,.07) 34%,
+      rgba(27,31,28,0) 72%);
+}
+.hero-photo::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, #1b1f1c 0%, rgba(27,31,28,.72) 9%, rgba(27,31,28,0) 30%);
+}
+.hero-picker { z-index: 2; }
+.hero .actions .button:not(.outline) {
+  box-shadow: 0 0 0 1px rgba(240,163,92,.28), 0 12px 34px -14px rgba(240,163,92,.65);
+}
+.hero .actions .button:not(.outline):hover {
+  box-shadow: 0 0 0 1px rgba(240,163,92,.5), 0 16px 42px -14px rgba(240,163,92,.85);
+}
+
+.hero h1 em { display: inline-block; color: var(--accent); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero h1 em {
+    background-image: linear-gradient(96deg, #d8f0a3 0%, #f0a35c 100%);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+}
+
+.hero-meta { border-top: 0; padding-top: 0; }
+.hero-meta::before {
+  content: ""; display: block; height: 1px; margin-bottom: 16px;
+  background: linear-gradient(90deg, var(--warm) 0%, var(--accent) 42%, rgba(65,69,63,0) 100%);
+}
+.hero-meta .star { color: var(--warm); }
+
+@media (max-width: 760px) {
+  .hero-copy {
+    background:
+      radial-gradient(130% 120% at 85% 0%,
+        rgba(240,163,92,.15) 0%,
+        rgba(240,163,92,.05) 40%,
+        rgba(27,31,28,0) 75%);
+  }
+  .hero-photo::after {
+    background: linear-gradient(180deg, rgba(27,31,28,.55) 0%, rgba(27,31,28,0) 22%);
+  }
 }
