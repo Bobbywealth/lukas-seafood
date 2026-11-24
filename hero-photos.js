@@ -12,11 +12,20 @@ if (picker && image) {
   buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
       const [source, sourceSet, description] = photos[index];
-      if (sourceSet) image.srcset = sourceSet;
-      else image.removeAttribute('srcset');
-      image.src = source;
-      image.alt = description;
       buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      const swap = function () {
+        if (sourceSet) image.srcset = sourceSet;
+        else image.removeAttribute('srcset');
+        image.src = source;
+        image.alt = description;
+        image.style.opacity = '';
+      };
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        swap();
+      } else {
+        image.style.opacity = '0';
+        window.setTimeout(swap, 200);
+      }
     });
   });
   buttons[0].setAttribute('aria-pressed', 'true');

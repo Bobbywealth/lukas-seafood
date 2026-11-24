@@ -1,0 +1,16 @@
+# Lukas' Seafood — Netlify headers
+#
+# /assets/img/* is served immutable for a year, so ANY change to a file in
+# assets/img/ MUST use a NEW filename. The site references images by name, not
+# by hash, so reusing a name would pin the old file in every browser cache.
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=()

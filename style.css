@@ -158,13 +158,6 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .mobile-actions a:last-child { background: var(--accent); color: #192019; }
 }
 
-@font-face {
-  font-family: Manrope;
-  src: url('fonts/manrope-latin.woff2') format("woff2");
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-}
 .hero {
   min-height: 0;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -197,7 +190,7 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
 @media (prefers-reduced-motion: no-preference) {
   .hero-copy { animation: intro-in 540ms ease-out both; }
   .button, .mobile-actions a { transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; }
-  .hero-photo img { animation: photo-in 380ms ease-out both; }
+  .hero-photo img { animation: photo-in 380ms ease-out; }
   @keyframes intro-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes photo-in { from { opacity: .65; } to { opacity: 1; } }
 }
@@ -431,4 +424,66 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .hero-photo::after {
     background: linear-gradient(180deg, rgba(27,31,28,.55) 0%, rgba(27,31,28,0) 22%);
   }
+}
+
+
+/* ---------- motion ---------- */
+.hero-copy { animation: none; }
+
+.js .reveal {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .75s cubic-bezier(.22,.7,.3,1), transform .75s cubic-bezier(.22,.7,.3,1);
+}
+.js .reveal.in { opacity: 1; transform: none; }
+.js .reveal .menu-card,
+.js .reveal .gallery-grid > *,
+.js .reveal .rating {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s cubic-bezier(.22,.7,.3,1);
+}
+.js .reveal.in .menu-card,
+.js .reveal.in .gallery-grid > *,
+.js .reveal.in .rating { opacity: 1; transform: none; }
+.js .reveal.in .menu-card:nth-child(2), .js .reveal.in .gallery-grid > *:nth-child(2) { transition-delay: .06s; }
+.js .reveal.in .menu-card:nth-child(3), .js .reveal.in .gallery-grid > *:nth-child(3) { transition-delay: .12s; }
+.js .reveal.in .menu-card:nth-child(4), .js .reveal.in .gallery-grid > *:nth-child(4) { transition-delay: .18s; }
+.js .reveal.in .menu-card:nth-child(5), .js .reveal.in .gallery-grid > *:nth-child(5) { transition-delay: .24s; }
+.js .reveal.in .menu-card:nth-child(6), .js .reveal.in .gallery-grid > *:nth-child(6) { transition-delay: .3s; }
+.js .reveal.in .rating:nth-child(2) { transition-delay: .07s; }
+.js .reveal.in .rating:nth-child(3) { transition-delay: .14s; }
+.js .reveal.in .rating:nth-child(4) { transition-delay: .21s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal,
+  .js .reveal .menu-card,
+  .js .reveal .gallery-grid > *,
+  .js .reveal .rating {
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy .eyebrow { animation: rise-in 520ms ease-out both; }
+  .hero-copy h1 { animation: rise-in 660ms 70ms ease-out both; }
+  .hero-copy > p:not(.eyebrow):not(.hero-meta) { animation: rise-in 660ms 140ms ease-out both; }
+  .hero .actions { animation: rise-in 660ms 210ms ease-out both; }
+  .hero-meta { animation: rise-in 660ms 280ms ease-out both; }
+
+  .hero-photo img { transition: opacity .22s ease; }
+  .menu-card img, .gallery-grid figure img, .gallery-grid > img {
+    transition: scale .7s cubic-bezier(.22,.7,.3,1);
+  }
+  .menu-card:hover img, .gallery-grid figure:hover img, .gallery-grid > img:hover { scale: 1.06; }
+  .button span { display: inline-block; transition: transform .22s ease; }
+  .button:hover span { transform: translateX(4px); }
+  .lightbox.open { animation: lb-fade .24s ease-out both; }
+  .lightbox.open img { animation: lb-pop .32s cubic-bezier(.22,.7,.3,1) both; }
+}
+
+@keyframes rise-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes lb-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lb-pop { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: none; } }
+
+@media (min-width: 761px) {
+  .hero-photo img { top: -9%; bottom: auto; height: 118%; will-change: transform; }
 }

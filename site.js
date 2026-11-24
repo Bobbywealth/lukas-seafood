@@ -53,6 +53,44 @@
     }
   }
 
+  /* ---------- scroll reveal ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    if ('IntersectionObserver' in window) {
+      var revealIO = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            entries[i].target.classList.add('in');
+            revealIO.unobserve(entries[i].target);
+          }
+        }
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0 });
+      for (var r = 0; r < revealEls.length; r++) revealIO.observe(revealEls[r]);
+    } else {
+      for (var r2 = 0; r2 < revealEls.length; r2++) revealEls[r2].classList.add('in');
+    }
+  }
+
+  /* ---------- hero photo parallax (desktop only) ---------- */
+  var heroImg = document.querySelector('.hero-photo img');
+  if (heroImg && window.matchMedia && window.matchMedia('(min-width: 761px)').matches) {
+    var paraTicking = false;
+    function paraUpdate() {
+      var limit = heroImg.parentNode.clientHeight * 0.07;
+      var y = Math.min((window.pageYOffset || 0) * 0.05, limit);
+      heroImg.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0) scale(1.02)';
+      paraTicking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!paraTicking) {
+        paraTicking = true;
+        window.requestAnimationFrame(paraUpdate);
+      }
+    }, { passive: true });
+    window.addEventListener('resize', paraUpdate);
+    paraUpdate();
+  }
+
   /* ---------- gallery lightbox ---------- */
   var grid = document.querySelector('.gallery-grid');
   if (!grid) return;
