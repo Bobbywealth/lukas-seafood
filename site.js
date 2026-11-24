@@ -25,6 +25,34 @@
     });
   }
 
+  /* ---------- today's hours (hero trust strip) ---------- */
+  var todayEl = document.querySelector('[data-today-hours]');
+  if (todayEl) {
+    var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var todayIdx = new Date().getDay();
+    var hoursRows = document.querySelectorAll('.hours-table tr');
+    for (var h = 0; h < hoursRows.length; h++) {
+      var th = hoursRows[h].querySelector('th');
+      var td = hoursRows[h].querySelector('td');
+      if (!th || !td) continue;
+      var label = th.textContent.replace(/\s+/g, ' ').trim();
+      if (label.toLowerCase().indexOf('brunch') !== -1) continue;
+      var m = label.match(/(\w+)\s*(?:[\u2013-]\s*(\w+))?/);
+      if (!m) continue;
+      var from = dayNames.indexOf(m[1]);
+      if (from === -1) continue;
+      var to = m[2] ? dayNames.indexOf(m[2]) : from;
+      if (to === -1) to = from;
+      var hit = (from <= to)
+        ? (todayIdx >= from && todayIdx <= to)
+        : (todayIdx >= from || todayIdx <= to);
+      if (hit) {
+        todayEl.textContent = 'Today ' + td.textContent.replace(/\s+/g, ' ').trim();
+        break;
+      }
+    }
+  }
+
   /* ---------- gallery lightbox ---------- */
   var grid = document.querySelector('.gallery-grid');
   if (!grid) return;
