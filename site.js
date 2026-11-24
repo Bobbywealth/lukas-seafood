@@ -117,19 +117,34 @@
     lbImg.src = shots[current].currentSrc || shots[current].src;
     lbImg.alt = shots[current].alt || '';
   }
+  var lastFocus = null;
   function open(i) {
     show(i);
+    lastFocus = shots[i];
     box.classList.add('open');
     document.body.style.overflow = 'hidden';
+    var closer = box.querySelector('.lb-close');
+    if (closer) closer.focus();
   }
   function close() {
     box.classList.remove('open');
     document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    lastFocus = null;
   }
 
   shots.forEach(function (shot, i) {
     shot.style.cursor = 'zoom-in';
+    if (!shot.getAttribute('tabindex')) shot.setAttribute('tabindex', '0');
+    shot.setAttribute('role', 'button');
+    shot.setAttribute('aria-label', 'Open photo: ' + (shot.alt || 'Lukas'));
     shot.addEventListener('click', function () { open(i); });
+    shot.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault();
+        open(i);
+      }
+    });
   });
   box.querySelector('.lb-close').addEventListener('click', close);
   box.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });

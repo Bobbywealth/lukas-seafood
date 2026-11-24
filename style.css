@@ -490,3 +490,13 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .hero-photo { overflow: hidden; }
   .hero-photo img { will-change: transform; }
 }
+
+
+/* ---------- menu preview cards are links ---------- */
+a.menu-card { color: inherit; text-decoration: none; }
+a.menu-card h3 { text-decoration: none; }
+a.menu-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 16px; }
+
+/* ---------- map in the visit block ---------- */
+.visit-info .map { margin: 22px 0 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+.visit-info .map iframe { display: block; width: 100%; height: 220px; border: 0; filter: grayscale(1) invert(.92) hue-rotate(180deg) brightness(1.06) contrast(.88); }

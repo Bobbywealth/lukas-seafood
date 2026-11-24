@@ -1,219 +1,212 @@
 {
-  "interior-bar-wine-wall": {
-    "group": "hero",
+  "bar-evening": {
+    "group": "original",
     "variants": [
       {
-        "file": "img/interior-bar-wine-wall-1600.webp",
-        "w": 1600,
-        "h": 1067
-      }
-    ],
-    "src_w": 1620,
-    "src_h": 1080
-  },
-  "exterior-night-signage": {
-    "group": "hero",
-    "variants": [
-      {
-        "file": "img/exterior-night-signage-315.webp",
-        "w": 315,
-        "h": 315
-      }
-    ],
-    "src_w": 315,
-    "src_h": 315
-  },
-  "patio-brick-outdoor": {
-    "group": "hero",
-    "variants": [
-      {
-        "file": "img/patio-brick-outdoor-1600.webp",
-        "w": 1600,
-        "h": 1200
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "lobster-bisque": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/lobster-bisque-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1000,
-    "src_h": 750
-  },
-  "horseradish-salmon": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/horseradish-salmon-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1000,
-    "src_h": 750
-  },
-  "new-york-strip": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/new-york-strip-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "filet-mignon-grilled": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/filet-mignon-grilled-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "octopus-greens": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/octopus-greens-900.webp",
-        "w": 900,
-        "h": 600
-      }
-    ],
-    "src_w": 1619,
-    "src_h": 1080
-  },
-  "penne-vodka": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/penne-vodka-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "short-rib-braised": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/short-rib-braised-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "grilled-shrimp-lobster": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/grilled-shrimp-lobster-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "seafood-chilled-platter": {
-    "group": "food",
-    "variants": [
-      {
-        "file": "img/seafood-chilled-platter-480.webp",
+        "file": "img/bar-evening-480.webp",
         "w": 480,
-        "h": 719
-      }
-    ],
-    "src_w": 721,
-    "src_h": 1080
-  },
-  "cocktail-pair": {
-    "group": "drinks",
-    "variants": [
+        "h": 480
+      },
       {
-        "file": "img/cocktail-pair-900.webp",
-        "w": 900,
-        "h": 600
+        "file": "img/bar-evening.webp",
+        "w": 1100,
+        "h": 1100
       }
     ],
-    "src_w": 1620,
-    "src_h": 1080
-  },
-  "wine-service-candle": {
-    "group": "drinks",
-    "variants": [
-      {
-        "file": "img/wine-service-candle-900.webp",
-        "w": 900,
-        "h": 600
-      }
-    ],
-    "src_w": 1620,
-    "src_h": 1080
-  },
-  "orange-cocktail-table": {
-    "group": "drinks",
-    "variants": [
-      {
-        "file": "img/orange-cocktail-table-900.webp",
-        "w": 900,
-        "h": 675
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 1100,
+    "src_h": 1100
   },
   "chocolate-cake-layered": {
     "group": "dessert",
     "variants": [
+      {
+        "file": "img/chocolate-cake-layered-480.webp",
+        "w": 480,
+        "h": 360
+      },
       {
         "file": "img/chocolate-cake-layered-900.webp",
         "w": 900,
         "h": 675
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 900,
+    "src_h": 675
+  },
+  "cocktail-pair": {
+    "group": "drinks",
+    "variants": [
+      {
+        "file": "img/cocktail-pair-480.webp",
+        "w": 480,
+        "h": 320
+      },
+      {
+        "file": "img/cocktail-pair-900.webp",
+        "w": 900,
+        "h": 600
+      }
+    ],
+    "src_w": 900,
+    "src_h": 600
+  },
+  "dining": {
+    "group": "original",
+    "variants": [
+      {
+        "file": "img/dining-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/dining.webp",
+        "w": 1280,
+        "h": 960
+      }
+    ],
+    "src_w": 1280,
+    "src_h": 960
+  },
+  "dining-hero": {
+    "group": "other",
+    "variants": [
+      {
+        "file": "img/dining-hero-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/dining-hero-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/dining-hero-1448.webp",
+        "w": 1448,
+        "h": 1086
+      }
+    ],
+    "src_w": 1448,
+    "src_h": 1086
+  },
+  "filet-mignon-grilled": {
+    "group": "food",
+    "variants": [
+      {
+        "file": "img/filet-mignon-grilled-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/filet-mignon-grilled-900.webp",
+        "w": 900,
+        "h": 675
+      }
+    ],
+    "src_w": 900,
+    "src_h": 675
   },
   "founders-portrait": {
     "group": "people",
     "variants": [
+      {
+        "file": "img/founders-portrait-640.webp",
+        "w": 640,
+        "h": 427
+      },
       {
         "file": "img/founders-portrait-900.webp",
         "w": 900,
         "h": 600
       }
     ],
-    "src_w": 1619,
-    "src_h": 1080
+    "src_w": 900,
+    "src_h": 600
   },
-  "women-smiling-table": {
-    "group": "people",
+  "grilled-shrimp-lobster": {
+    "group": "food",
     "variants": [
       {
-        "file": "img/women-smiling-table-900.webp",
+        "file": "img/grilled-shrimp-lobster-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/grilled-shrimp-lobster-900.webp",
         "w": 900,
         "h": 675
       }
     ],
+    "src_w": 900,
+    "src_h": 675
+  },
+  "guestbook-prix-fixe-card": {
+    "group": "brand",
+    "variants": [
+      {
+        "file": "img/guestbook-prix-fixe-card-640.webp",
+        "w": 640,
+        "h": 800
+      },
+      {
+        "file": "img/guestbook-prix-fixe-card-1200.webp",
+        "w": 1200,
+        "h": 1500
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 1500
+  },
+  "horseradish-salmon": {
+    "group": "food",
+    "variants": [
+      {
+        "file": "img/horseradish-salmon-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/horseradish-salmon-900.webp",
+        "w": 900,
+        "h": 675
+      }
+    ],
+    "src_w": 900,
+    "src_h": 675
+  },
+  "interior-bar-wine-wall": {
+    "group": "hero",
+    "variants": [
+      {
+        "file": "img/interior-bar-wine-wall-480.webp",
+        "w": 480,
+        "h": 320
+      },
+      {
+        "file": "img/interior-bar-wine-wall-1600.webp",
+        "w": 1600,
+        "h": 1067
+      }
+    ],
     "src_w": 1600,
-    "src_h": 1200
+    "src_h": 1067
+  },
+  "lobster-bisque": {
+    "group": "food",
+    "variants": [
+      {
+        "file": "img/lobster-bisque-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/lobster-bisque-900.webp",
+        "w": 900,
+        "h": 675
+      }
+    ],
+    "src_w": 900,
+    "src_h": 675
   },
   "logo-ls-monogram-cropped": {
     "group": "brand",
@@ -231,197 +224,282 @@
     "group": "brand",
     "variants": [
       {
+        "file": "img/menu-cover-black-marble-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
         "file": "img/menu-cover-black-marble-1200.webp",
         "w": 1200,
         "h": 800
       }
     ],
-    "src_w": 1620,
-    "src_h": 1080
+    "src_w": 1200,
+    "src_h": 800
   },
-  "guestbook-prix-fixe-card": {
-    "group": "brand",
+  "new-york-strip": {
+    "group": "food",
     "variants": [
       {
-        "file": "img/guestbook-prix-fixe-card-1200.webp",
-        "w": 1200,
-        "h": 1500
+        "file": "img/new-york-strip-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/new-york-strip-900.webp",
+        "w": 900,
+        "h": 675
       }
     ],
-    "src_w": 1440,
-    "src_h": 1800
+    "src_w": 900,
+    "src_h": 675
   },
-  "scan-steaks-and-chops": {
-    "group": "menu",
+  "octopus-greens": {
+    "group": "food",
     "variants": [
       {
-        "file": "img/scan-steaks-and-chops-1200.webp",
-        "w": 1200,
-        "h": 900
+        "file": "img/octopus-greens-480.webp",
+        "w": 480,
+        "h": 320
+      },
+      {
+        "file": "img/octopus-greens-900.webp",
+        "w": 900,
+        "h": 600
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 900,
+    "src_h": 600
   },
-  "scan-soups-and-salads": {
-    "group": "menu",
+  "orange-cocktail-table": {
+    "group": "drinks",
     "variants": [
       {
-        "file": "img/scan-soups-and-salads-1200.webp",
-        "w": 1200,
-        "h": 900
+        "file": "img/orange-cocktail-table-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/orange-cocktail-table-900.webp",
+        "w": 900,
+        "h": 675
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 900,
+    "src_h": 675
   },
-  "scan-entrees-and-complements": {
-    "group": "menu",
+  "patio-brick-outdoor": {
+    "group": "hero",
     "variants": [
       {
-        "file": "img/scan-entrees-and-complements-1200.webp",
-        "w": 1200,
-        "h": 900
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "scan-prix-fixe": {
-    "group": "menu",
-    "variants": [
+        "file": "img/patio-brick-outdoor-480.webp",
+        "w": 480,
+        "h": 360
+      },
       {
-        "file": "img/scan-prix-fixe-1200.webp",
-        "w": 1200,
-        "h": 900
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "scan-cocktail-sign": {
-    "group": "menu",
-    "variants": [
-      {
-        "file": "img/scan-cocktail-sign-1200.webp",
-        "w": 1200,
-        "h": 900
+        "file": "img/patio-brick-outdoor-1600.webp",
+        "w": 1600,
+        "h": 1200
       }
     ],
     "src_w": 1600,
     "src_h": 1200
   },
-  "scan-paloma-cocktail": {
-    "group": "menu",
+  "penne-vodka": {
+    "group": "food",
     "variants": [
       {
-        "file": "img/scan-paloma-cocktail-1200.webp",
-        "w": 1200,
-        "h": 900
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "scan-martinis": {
-    "group": "menu",
-    "variants": [
+        "file": "img/penne-vodka-480.webp",
+        "w": 480,
+        "h": 360
+      },
       {
-        "file": "img/scan-martinis-1200.webp",
-        "w": 1200,
-        "h": 900
+        "file": "img/penne-vodka-900.webp",
+        "w": 900,
+        "h": 675
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "scan-beer-draft": {
-    "group": "menu",
-    "variants": [
-      {
-        "file": "img/scan-beer-draft-1200.webp",
-        "w": 1200,
-        "h": 900
-      }
-    ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 900,
+    "src_h": 675
   },
   "scan-after-dinner-drinks": {
     "group": "menu",
     "variants": [
+      {
+        "file": "img/scan-after-dinner-drinks-640.webp",
+        "w": 640,
+        "h": 480
+      },
       {
         "file": "img/scan-after-dinner-drinks-1200.webp",
         "w": 1200,
         "h": 900
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-beer-draft": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-beer-draft-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-beer-draft-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-cocktail-sign": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-cocktail-sign-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-cocktail-sign-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-entrees-and-complements": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-entrees-and-complements-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-entrees-and-complements-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-martinis": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-martinis-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-martinis-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-paloma-cocktail": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-paloma-cocktail-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-paloma-cocktail-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-prix-fixe": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-prix-fixe-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-prix-fixe-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-soups-and-salads": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-soups-and-salads-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-soups-and-salads-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
+  },
+  "scan-steaks-and-chops": {
+    "group": "menu",
+    "variants": [
+      {
+        "file": "img/scan-steaks-and-chops-640.webp",
+        "w": 640,
+        "h": 480
+      },
+      {
+        "file": "img/scan-steaks-and-chops-1200.webp",
+        "w": 1200,
+        "h": 900
+      }
+    ],
+    "src_w": 1200,
+    "src_h": 900
   },
   "scan-wine-list": {
     "group": "menu",
     "variants": [
+      {
+        "file": "img/scan-wine-list-640.webp",
+        "w": 640,
+        "h": 480
+      },
       {
         "file": "img/scan-wine-list-1200.webp",
         "w": 1200,
         "h": 900
       }
     ],
-    "src_w": 1600,
-    "src_h": 1200
-  },
-  "bar-evening": {
-    "group": "original",
-    "variants": [
-      {
-        "file": "img/bar-evening.webp",
-        "w": 1100,
-        "h": 1100
-      }
-    ],
-    "src_w": 1100,
-    "src_h": 1100
-  },
-  "dining-hero-1448": {
-    "group": "original",
-    "variants": [
-      {
-        "file": "img/dining-hero-1448.webp",
-        "w": 1448,
-        "h": 1086
-      }
-    ],
-    "src_w": 1448,
-    "src_h": 1086
-  },
-  "dining": {
-    "group": "original",
-    "variants": [
-      {
-        "file": "img/dining.webp",
-        "w": 1280,
-        "h": 960
-      }
-    ],
-    "src_w": 1280,
-    "src_h": 960
-  },
-  "seafood-risotto": {
-    "group": "original",
-    "variants": [
-      {
-        "file": "img/seafood-risotto.webp",
-        "w": 1280,
-        "h": 853
-      }
-    ],
-    "src_w": 1280,
-    "src_h": 853
+    "src_w": 1200,
+    "src_h": 900
   },
   "seafood": {
     "group": "original",
     "variants": [
+      {
+        "file": "img/seafood-480.webp",
+        "w": 480,
+        "h": 326
+      },
       {
         "file": "img/seafood.webp",
         "w": 940,
@@ -431,9 +509,43 @@
     "src_w": 940,
     "src_h": 638
   },
+  "seafood-chilled-platter": {
+    "group": "food",
+    "variants": [
+      {
+        "file": "img/seafood-chilled-platter-480.webp",
+        "w": 480,
+        "h": 719
+      }
+    ],
+    "src_w": 480,
+    "src_h": 719
+  },
+  "seafood-risotto": {
+    "group": "original",
+    "variants": [
+      {
+        "file": "img/seafood-risotto-480.webp",
+        "w": 480,
+        "h": 320
+      },
+      {
+        "file": "img/seafood-risotto.webp",
+        "w": 1280,
+        "h": 853
+      }
+    ],
+    "src_w": 1280,
+    "src_h": 853
+  },
   "seared-entree": {
     "group": "original",
     "variants": [
+      {
+        "file": "img/seared-entree-480.webp",
+        "w": 480,
+        "h": 480
+      },
       {
         "file": "img/seared-entree.webp",
         "w": 752,
@@ -443,9 +555,31 @@
     "src_w": 752,
     "src_h": 752
   },
+  "short-rib-braised": {
+    "group": "food",
+    "variants": [
+      {
+        "file": "img/short-rib-braised-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/short-rib-braised-900.webp",
+        "w": 900,
+        "h": 675
+      }
+    ],
+    "src_w": 900,
+    "src_h": 675
+  },
   "sliced-steak": {
     "group": "original",
     "variants": [
+      {
+        "file": "img/sliced-steak-480.webp",
+        "w": 480,
+        "h": 406
+      },
       {
         "file": "img/sliced-steak.webp",
         "w": 909,
@@ -459,6 +593,11 @@
     "group": "original",
     "variants": [
       {
+        "file": "img/steak-and-seafood-480.webp",
+        "w": 480,
+        "h": 307
+      },
+      {
         "file": "img/steak-and-seafood.webp",
         "w": 900,
         "h": 575
@@ -471,6 +610,11 @@
     "group": "original",
     "variants": [
       {
+        "file": "img/storefront-640.webp",
+        "w": 640,
+        "h": 320
+      },
+      {
         "file": "img/storefront.webp",
         "w": 1440,
         "h": 720
@@ -479,9 +623,14 @@
     "src_w": 1440,
     "src_h": 720
   },
-  "table-752": {
-    "group": "original",
+  "table": {
+    "group": "other",
     "variants": [
+      {
+        "file": "img/table-480.webp",
+        "w": 480,
+        "h": 480
+      },
       {
         "file": "img/table-752.webp",
         "w": 752,
@@ -490,5 +639,39 @@
     ],
     "src_w": 752,
     "src_h": 752
+  },
+  "wine-service-candle": {
+    "group": "drinks",
+    "variants": [
+      {
+        "file": "img/wine-service-candle-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "file": "img/wine-service-candle-900.webp",
+        "w": 900,
+        "h": 600
+      }
+    ],
+    "src_w": 900,
+    "src_h": 600
+  },
+  "women-smiling-table": {
+    "group": "people",
+    "variants": [
+      {
+        "file": "img/women-smiling-table-480.webp",
+        "w": 480,
+        "h": 360
+      },
+      {
+        "file": "img/women-smiling-table-900.webp",
+        "w": 900,
+        "h": 675
+      }
+    ],
+    "src_w": 900,
+    "src_h": 675
   }
 }
