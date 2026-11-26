@@ -525,7 +525,7 @@ p:last-child { margin-bottom: 0; }
 /* ---------- 13 ratings ---------- */
 .rating-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--line);
 }
 @media (max-width: 620px) { .rating-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
